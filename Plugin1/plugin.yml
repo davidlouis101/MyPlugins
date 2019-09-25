@@ -19,7 +19,7 @@ commands:
     description: "Ändere deinen Spielmodus."
     usage: "/gms"
   gma:
-    description: "Ändere deine Spielmodus.
+    description: "Ändere deine Spielmodus."
     usage: "/gma"
   gmsp:
     description: "Ändere deinen Spielmodus"
