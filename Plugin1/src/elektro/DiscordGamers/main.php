@@ -27,7 +27,6 @@ class main extends PluginBase{
                    }
                    return true;
                }
-               break;
 
            case "night":
                if ($sender instanceof Player) {
@@ -39,7 +38,7 @@ class main extends PluginBase{
                    }
                    return true;
                }
-               break;
+               
            case "gmc":
                if ($sender instanceof Player) {
                    if ($sender->hasPermission("dcgame.gmc")){
@@ -50,7 +49,7 @@ class main extends PluginBase{
                    }
                    return true;
                }
-               break;
+               
            case "gms":
                if ($sender instanceof Player) {
                    if ($sender->hasPermission("dcgame.gms")){
@@ -61,7 +60,7 @@ class main extends PluginBase{
                    }
                    return true;
                }
-               break;
+               
            case "gma":
                if ($sender instanceof  Player) {
                    if ($sender->hasPermission("dcgame.gma")){
@@ -72,7 +71,7 @@ class main extends PluginBase{
                    }
                    return true;
                }
-               break;
+               
            case "gmsp":
                if($sender instanceof Player){
                    if($sender->hasPermission("dcgame.gmsp")){
