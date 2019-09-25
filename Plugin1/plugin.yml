@@ -2,7 +2,7 @@ name: DiscordGamers-Plugin
 author: ElektroPrinz
 main: elektro\DiscordGamers\main
 version: 1.0.0
-website: https://steelcraft.ml
+website: https://steelcraft.ml/
 
 commands:
   day:
