@@ -1,18 +1,14 @@
-name: DiscordGamers-day-night
-author: ElektroPrinz
+name: DiscordGamersPlugin
 main: elektro\DiscordGamers\main
-api:
-  - 3.9.3
-  - 4.0.0
-version: 1.0.0
-website: https://steelcraft.ml
+version: 1.5.3
+api: 3.9.0
+author: ElektroPrinz
 
 commands:
   day:
     description: Ändert die tages zeit.
     usage: "/day"
     permission: dcgame.day
-
   night:
     description: Ändert die tages zeit
     usage: "/night"
@@ -23,35 +19,36 @@ commands:
     permission: dcgame.gmc
   gms:
     description: Ändere deinen Spielmodus.
-    usage: "/gms"
+    usage: /gms
     permission: dcgame.gms
   gma:
     description: Ändere deine Spielmodus.
-    usage: "/gma"
+    usage: /gma
     permission: dcgame.gma
   gmsp:
     description: Ändere deinen Spielmodus
     usage: "/gmsp"
     permission: dcgame.gmsp
 permissions:
-  dcgame.*:
+  dcgame:
     default: op
+    description: Rechte zu allen commands
     children:
       dcgame.day:
+        description: Erlaubt den /day command zu benutzen.
         default: op
-        description: Rechte um den day command aus zufüheren
-       dcgame.night:
+      dcgame.night:
+        description: Erlaubt den /night command zu benutzen.
         default: op
-        description: Rechte um den night command aus zuführen
       dcgame.gmc:
+        description: Allow using
         default: op
-        description: Rechte um den gmc comand aus zuführen.
       dcgame.gms:
+        description: Allow using
         default: op
-        description: Rechte um den gms command auszuführen.
       dcgame.gma:
+        description: Allow using
         default: op
-        description: Rechte um den gma command auszuführen.
       dcgame.gmsp:
-         default: op
-        description: Rechte um den gmsp command auszuführen.
+        description: Erlaubt den /gmsp command zu benutzen.
+        default: op
