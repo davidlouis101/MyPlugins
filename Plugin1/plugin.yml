@@ -1,51 +1,57 @@
 name: DiscordGamers-day-night
 author: ElektroPrinz
 main: elektro\DiscordGamers\main
+api:
+  - 3.9.3
+  - 4.0.0
 version: 1.0.0
-api: 
-- 3.9.3 #pmmp
-- 4.0.0 #Altay
 website: https://steelcraft.ml
 
 commands:
   day:
-    description: "Ändert die tages zeit."
+    description: Ändert die tages zeit.
     usage: "/day"
+    permission: dcgame.day
 
   night:
-    description: "Ändert die tages zeit"
+    description: Ändert die tages zeit
     usage: "/night"
+    permission:  dcgame.night
   gmc:
-    description: "Ändere deinen Spielmodus."
+    description: Ändere deinen Spielmodus.
     usage: "/gmc"
+    permission: dcgame.gmc
   gms:
-    description: "Ändere deinen Spielmodus."
+    description: Ändere deinen Spielmodus.
     usage: "/gms"
+    permission: dcgame.gms
   gma:
-    description: "Ändere deine Spielmodus"
+    description: Ändere deine Spielmodus.
     usage: "/gma"
+    permission: dcgame.gma
   gmsp:
-    description: "Ändere deinen Spielmodus"
+    description: Ändere deinen Spielmodus
     usage: "/gmsp"
+    permission: dcgame.gmsp
 permissions:
   dcgame.*:
     default: op
     children:
       dcgame.day:
         default: op
-        description: "Rechte um den day command aus zufüheren"
+        description: Rechte um den day command aus zufüheren
        dcgame.night:
         default: op
-        description: "Rechte um den night command aus zuführen"
+        description: Rechte um den night command aus zuführen
       dcgame.gmc:
         default: op
-        description: "Rechte um den gmc comand aus zuführen."
+        description: Rechte um den gmc comand aus zuführen.
       dcgame.gms:
         default: op
-        description: "Rechte um den gms command auszuführen."
+        description: Rechte um den gms command auszuführen.
       dcgame.gma:
         default: op
-        description: "Rechte um den gma command auszuführen."
+        description: Rechte um den gma command auszuführen.
       dcgame.gmsp:
          default: op
-        description: "Rechte um den gmsp command auszuführen."
+        description: Rechte um den gmsp command auszuführen.
